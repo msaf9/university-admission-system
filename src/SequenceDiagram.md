@@ -1,8 +1,10 @@
 ```mermaid
 sequenceDiagram
-  participant Visitor
-  participant Applicant
-  participant Administrator
+  participant Student
+  participant System
+  participant Server
+  participant Database
+  participant Payments Database
   
   par Inquiry details
         Applicant->>Administrator: Inquiry Question
