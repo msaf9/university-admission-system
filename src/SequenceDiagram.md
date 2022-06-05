@@ -6,49 +6,52 @@ sequenceDiagram
   participant Database
   participant Payments Database
   
-  par Inquiry details
-        Applicant->>Administrator: Inquiry Question
-        activate Administrator 
-        Administrator -->>Applicant: Reply Inquiry
-        deactivate Administrator
-  end
+  autonumber
   
-  par Admission form filling
-        Applicant->>Administrator: Fill Admission Form
-        activate Administrator 
-        Administrator->>Administrator: Check for existing Applicant's ID
-        Administrator -->>Applicant: Applicant ID and Password
-        deactivate Administrator
-  end
+  Student->>System: Visit
+  activate System 
+  System ->>Student: Display Information
+  activate Student 
+  deactivate System
+  deactivate Student
   
-  par Login for merit list
-        Applicant->>Administrator: Login details
-        activate Administrator
-        Administrator->>Administrator: Checks Validation
-        Administrator -->>Applicant: View Merit List
-        deactivate Administrator
-  end
+  Student->>System: Requests Registration
+  activate System 
+  System ->>Server: Checks Availability
+  deactivate System
+  activate Server 
+  Server ->>System: Admissions in Progress
+  activate System 
+  deactivate System 
+  deactivate Server 
   
-  par Final admission confirmation
-        Applicant->>Administrator: Final Merit Details
-        activate Administrator
-        Administrator -->>Applicant: Admission Confirmation and reciept
-        deactivate Administrator
-  end
+  System->>Database: Adds the Student
+  activate Database 
+  Database ->>System: Response for Updation
+  activate System 
+  deactivate Database
+  deactivate System 
   
-  par Inquiry Registration
-        Visitor->>Administrator: Inquiry Details
-        activate Administrator
-        Administrator->>Administrator: Compare Inquiry IDs
-        Administrator-->>Administrator: Checks with already done inquiries
-        Administrator -->>Visitor: Send Inquiry ID
-        deactivate Administrator
-  end
+  System->>Student: Registration Successful
+  activate Student
+  deactivate Student
+  System->>Student: Ask for Payment  
+  activate Student   
+  deactivate Student 
   
-  par Inquiry Reply
-        Visitor->>Administrator: Inquiry ID
-        activate Administrator
-        Administrator -->>Visitor: Inquiry Response
-        deactivate Administrator
-  end
+  System->>Payment Database: Update Payment Database
+  activate Payment Database
+  deactivate Payment Database
+  
+  Student->>System: Payment
+  activate System
+  deactivate System
+  Payment Database->>System: Updation Response
+  activate System
+  deactivate System
+  
+  System->>Student: Registration Completed
+  activate Student
+  deactivate Student
+  
 ```
