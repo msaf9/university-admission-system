@@ -1,1 +1,1 @@
-![stock-management-system](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://gist.githubusercontent.com/msaf9/100aa5bea3ef53b1b50bab772ec81f0d/raw/e7dbccd7df7abf426133424f150218041ba826c1/ActivityDiagramAdmissions.iuml)
+![university-management-system](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://gist.githubusercontent.com/msaf9/100aa5bea3ef53b1b50bab772ec81f0d/raw/e7dbccd7df7abf426133424f150218041ba826c1/ActivityDiagramAdmissions.iuml)
