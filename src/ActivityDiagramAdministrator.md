@@ -1,0 +1,1 @@
+![university-management-system](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://gist.githubusercontent.com/msaf9/d360ddf22f3da974daa424215042b7fd/raw/b5c23216ae5c5dd5881e05688e13592dea5600d3/ActivityDiagramAdministrator.iuml)
