@@ -1,0 +1,18 @@
+@startuml
+start
+repeat
+  :Login;
+  :Verify Authorized user;
+repeat while (more data?) is (no)
+->yes;
+:Apply for admission;
+if ("Check admission eligibility") then
+  ->"Eligible";
+  :Check details;
+  :Provide admission;
+  :Manage record;
+else
+  ->"Not Eligible";
+endif
+stop
+@enduml
