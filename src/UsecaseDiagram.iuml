@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+actor Student as s
+actor Register as r
+actor Tutor as t
+actor Administrator as a
+
+rectangle UniversityAdmissionSystem {
+  usecase "Register for a course" as UC1
+  usecase "View course details" as UC2
+  usecase "Marks verification" as UC3
+  usecase "Transaction details" as UC4
+  usecase "Conduct" as UC5
+  usecase "Open" as UC6
+  usecase "Modify Course Information" as UC7
+  usecase "Close Registration" as UC8
+  usecase "Provide Course Information" as UC9
+  usecase "Provide Course Catalog" as UC10
+  usecase "Collect Course Information" as UC11
+}
+
+UC9 .> UC10 : uses
+UC10 .> UC11 : extends
+s --> UC1
+s --> UC2
+s --> UC3
+s --> UC4
+r --> UC4
+r --> UC5
+r --> UC6
+r --> UC7
+r --> UC8
+r --> UC9
+r --> UC10
+r --> UC11
+UC3 <-- a
+UC4 <-- a
+UC5 <-- a
+UC6 <-- a
+UC7 <-- a
+UC8 <-- a
+UC9 <-- a
+UC11 <-- t
+
+@enduml
