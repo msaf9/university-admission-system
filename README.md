@@ -1,12 +1,18 @@
 # University Admission System
 University Admission System Architecture.
 
-## Table of contents
-1. Introduction
-2. Technologies
-3. Project status
-4. Installation
-5. License
+- [University Admission System](#university-admission-system)
+  - [Introduction](#introduction)
+    - [UML Diagrams](#uml-diagrams)
+      - [Use case diagram](#use-case-diagram)
+      - [Class diagram](#class-diagram)
+      - [Sequence diagram](#sequence-diagram)
+      - [Activity diagram](#activity-diagram)
+  - [Technologies](#technologies)
+  - [Project status](#project-status)
+  - [Installation](#installation)
+    - [Get repository](#get-repository)
+  - [License](#license)
 
 ## Introduction
 Design and development of University Admission System architecture.
