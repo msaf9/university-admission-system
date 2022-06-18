@@ -3,6 +3,7 @@ University Admission System Architecture.
 
 - [University Admission System](#university-admission-system)
   - [Introduction](#introduction)
+    - [Course Information](#course-information)
     - [UML Diagrams](#uml-diagrams)
       - [Use case diagram](#use-case-diagram)
       - [Class diagram](#class-diagram)
@@ -17,6 +18,7 @@ University Admission System Architecture.
 ## Introduction
 Design and development of University Admission System architecture.
 
+### Course Information
 - Course Name: SOFTWARE ENGINEERING
 - Course Code: 15CS2105
 - Course Credits: 4
