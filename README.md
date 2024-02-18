@@ -64,8 +64,8 @@ Design and development of University Admission System architecture.
 ### Get repository
 
 ```git
-git https://github.com/msaf9/UniversityAdmissionSystem.git
-cd UniversityAdmissionSystem
+git https://github.com/msaf9/university-admission-system.git
+cd university-admission-system
 ```
 
 ## License
