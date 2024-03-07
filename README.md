@@ -1,6 +1,8 @@
 <h1> University Admission System</h1>
 University Admission System Architecture.
 
+<h2>Table of contents</h2>
+
 - [Introduction](#introduction)
   - [Course Information](#course-information)
   - [UML Diagrams](#uml-diagrams)
@@ -8,7 +10,7 @@ University Admission System Architecture.
     - [Class diagram](#class-diagram)
     - [Sequence diagram](#sequence-diagram)
     - [Activity diagram](#activity-diagram)
-- [Technologies](#technologies)
+- [Markup Language](#markup-language)
 - [Project status](#project-status)
 - [Installation](#installation)
   - [Get repository](#get-repository)
@@ -51,7 +53,7 @@ Design and development of University Admission System architecture.
 
 - Navigate to Activity diagram [markdown source code](/src/ActivityDiagramAdministrator.iuml).
 
-## Technologies
+## Markup Language
 
 - Markdown
 
